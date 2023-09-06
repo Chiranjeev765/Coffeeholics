@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("https://free4kwallpapers.com/uploads/originals/2019/06/12/simple-life---coffee-wallpaper.jpg");
+            background-size: cover;
+            
+        }
+
+        .container {
+            height: 65vh;
+            width: 68vh;
+            box-sizing: border-box;
+            margin: 20vh 70vh;
+
+        }
+
+        .signin {
+            height: 65vh;
+            width: 68vh;
+            border-radius: 20px;
+           /* box-shadow: 5px 5px 8px white,
+                -5px -5px 8px white;*/
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background-image: url(");8*/
+            background-color: rgba(255,255,255,0.2) ;
+        }
+
+        label {
+            text-transform: uppercase;
+            color: black;
+            font-size: 25px;
+        }
+
+        input {
+            border-radius: 10px;
+            /*box-shadow: 5px 5px 5px white,
+                5px 5px 5px black;*/
+             color: black;
+                background-color: rgba(255,255,255,0.2) ;
+            border: none;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            height: 6vh;
+            width: 25vh;
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(255,255,255,0.2) ;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: 0.6s;
+        }
+       button:hover{
+        font-size: 25px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signin">
+            <div class="form">
+                <label><b>Username</b></label><br><br>
+                <input type="text" name="" placeholder="Enter your Username"  id="username">
+                <br><br>
+                <label><b>Password</b></label><br><br>
+                <input type="password" name="" placeholder="Enter your Password" id="password">
+                <br><br><br>
+                <div id="button" onclick="validate()"> <button>Log In</button></div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+        function validate() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "admin" && password == "123") {
+                alert("You have been logged in!");
+
+            }
+            else {
+                alert("Invalid details");
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
